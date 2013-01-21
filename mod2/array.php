@@ -25,6 +25,40 @@
 	ЗАДАНИЕ 2
 	- Выведите значения всех трёх массивов в виде: name - model - speed - doors -year,  например: bmw - 120 - 5 - 2006
 	*/
-	?>
+?>
+<?php
+$bmw = array(
+	"model"=>"X5",
+	"speed"=>120,
+	"doors"=>5,
+	"year"=>"2006");
+$toyota = array(
+	"model"=>"Carina",
+	"speed"=>130,
+	"doors"=>4,
+	"year"=>"2007");
+$opel = array(
+	"model"=>"Corsa",
+	"speed"=>140,
+	"doors"=>5,
+	"year"=>"2007");	
+
+$cars = array();
+$cars[] = $bmw;
+$cars[] = $toyota;
+$cars[] = $opel;
+?>	
+
+<?php
+	echo "<p>BMW", " - ",$bmw[model]," - ",$bmw[speed]," - ",$bmw[doors]," - ",$bmw[year],"</p>";
+	echo "<p>Toyota" , " - ",$toyota[model]," - ",$toyota[speed]," - ",$toyota[doors]," - ",$toyota[year],"</p>";
+	echo "<p>Opel" , " - " ,$opel[model]," - ",$opel[speed]," - ",$opel[doors]," - ",$opel[year],"</p>";
+?>
+	<hr>
+<?php
+		echo "<p>", $cars[0]["model"], " : ", $cars[0]["year"], "</p>";
+		echo "<p>", $cars[1]["model"], " : ", $cars[1]["year"], "</p>";
+		echo "<p>", $cars[2]["model"], " : ", $cars[2]["year"], "</p>";
+?>
 </body>
 </html>
