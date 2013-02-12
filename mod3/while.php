@@ -2,17 +2,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-	<title>Р¦РёРєР» while</title>
+	<title>Цикл while</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
 </head>
 <body>
-	<h1>Р¦РёРєР» while</h1>
+	<h1>Цикл while</h1>
 	<?php
-		$num = 1;
-		while ($num <= 49){
-			print "$num<br />";
-			$num += 2;
-		}
+	/*
+	ЗАДАНИЕ 1
+	- Используя цикл while выведите в столбик Нечётные числа от 1 до 50
+	*/
 	?>
 </body>
 </html>
